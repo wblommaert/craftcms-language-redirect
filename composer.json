@@ -1,0 +1,33 @@
+{
+  "name": "liquidbcn/craftcms-language-redirect",
+  "description": "Simple language redirector based on browser preferences",
+  "type": "craft-plugin",
+  "keywords": ["craft", "cms", "craft-plugin", "rate limit"],
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Marc Bernet",
+      "homepage": "https://liquidbcn.com"
+    }
+  ],
+  "support": {
+    "email": "mbernet@liquid.cat",
+    "issues": "https://github.com/LiquidBarcelona/craftcms-language-redirect/issues?state=open",
+    "source": "https://github.com/LiquidBarcelona/craftcms-language-redirect",
+    "docs": "https://github.com/LiquidBarcelona/craftcms-language-redirect/blob/master/README.md"
+  },
+  "require": {
+    "craftcms/cms": "^4",
+    "koenster/php-language-detection": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "liquidbcn\\languageredirect\\": "src/"
+    }
+  },
+  "extra": {
+    "name": "Language Redirector",
+    "handle": "language-redirect",
+    "class": "liquidbcn\\languageredirect\\LanguageRedirector"
+  }
+}
