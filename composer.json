@@ -26,7 +26,7 @@
     }
   },
   "extra": {
-    "name": "Language Redirector",
+    "name": "Simple Language Redirector",
     "handle": "language-redirect",
     "class": "liquidbcn\\languageredirect\\LanguageRedirector"
   }
