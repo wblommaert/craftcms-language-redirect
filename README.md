@@ -22,7 +22,13 @@ To install the plugin, follow these instructions.
 
 ## Configuring the plugin
 
-You can configure the plugin creating a file under your config folder named language-redirect.php with this content
+You can configure the plugin creating a file under your config folder named language-redirect.php with the desired settings.
+
+defaultLanguage: default locale if none is detected
+
+urls: array containing the mapping between the locale and the relative url of your language base path
+
+*Example*
 ```
 <?php
 
