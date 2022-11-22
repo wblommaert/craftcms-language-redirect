@@ -47,4 +47,17 @@ class LanguageRedirector extends \craft\base\Plugin
     {
         return new Settings();
     }
+
+    /**
+     * @inheritdoc
+     */
+    protected function settingsHtml(): string
+    {
+        return Craft::$app->view->renderTemplate(
+            'craftcms-language-redirect/settings',
+            [
+                'settings'  => $this->getSettings(),
+            ]
+        );
+    }
 }
