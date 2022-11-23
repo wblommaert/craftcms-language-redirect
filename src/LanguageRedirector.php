@@ -1,6 +1,7 @@
 <?php
 namespace liquidbcn\languageredirect;
 
+use Craft;
 use craft\base\Model;
 use liquidbcn\languageredirect\models\Settings;
 use yii\web\HttpException;
@@ -54,7 +55,7 @@ class LanguageRedirector extends \craft\base\Plugin
     protected function settingsHtml(): string
     {
         return Craft::$app->view->renderTemplate(
-            'craftcms-language-redirect/settings',
+            'language-redirect/settings',
             [
                 'settings'  => $this->getSettings(),
             ]
