@@ -1,0 +1,36 @@
+{% block content %}
+    <style>
+        .code {
+            padding: .75rem 1rem;
+            background: #f1f5fd;
+            border-radius: 0.25rem;
+        }
+        .code.span {
+            padding: .25rem .5rem;
+        }
+    </style>
+    <div class="theme-default-content">
+        <div>
+            <h2>Language Redirect for CraftCMS</h2>
+            <p>This plugin allows you redirect your users to the desired url based on user browser preferences.</p>
+        </div>
+        <hr>
+        <div>
+            <h2>How to set up</h2>
+            <p>You can configure the plugin by creating your own config file with desired settings in <code class="code span">/config/language-redirect.php</code>:
+            <pre class="code">
+    return [
+        'defaultLanguage' => 'en-GB',
+        'urls' =>  [
+            'ca'    => '/ca/',
+            'ca-ES' => '/ca/',
+            'es'    => '/es/',
+            'es-ES' => '/es/',
+            'en-GB' => '/en/',
+            'en-US' => '/en/',
+            'en'    => '/en/'
+        ]
+    ];</pre>
+        </div>
+    </div>
+{% endblock %}
